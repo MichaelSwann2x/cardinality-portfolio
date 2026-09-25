@@ -79,7 +79,7 @@ def solve_cardinality_portfolio(
     mu = np.asarray(mu, dtype=float).ravel()
     Sigma = np.asarray(Sigma, dtype=float)
     n = len(mu)
-    K = int(max(1, min(K, n))
+    K = int(max(1, min(K, n)))
 
     if prefer_cvxpy:
         try:
